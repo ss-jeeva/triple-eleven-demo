@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple Eleven</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            color: #24334a;
+            text-align: center;
+        }
+
+        header {
+            background: #142b49;
+            color: white;
+            padding: 35px 15px;
+        }
+
+        nav {
+            background: #244365;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 12px;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 55px 15px;
+        }
+
+        .card {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #0001;
+        }
+
+        button {
+            background: #168c58;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #142b49;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TRIPLE ELEVEN</h1>
+    <p>My First Cloud Website</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main id="home">
+    <div class="card">
+        <h2>Welcome to Triple Eleven!</h2>
+        <p>This is my first website.</p>
+        <p>Learning Web Development Step by Step.</p>
+
+        <button onclick="showMessage()">
+            Click Here
+        </button>
+
+        <p id="message"></p>
+    </div>
+</main>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to our Demo Website.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: demo@example.com</p>
+</section>
+
+<footer>
+    <p>Copyright 2026 Triple Eleven</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerHTML =
+            "Congratulations! Your Website is Working!";
+    }
+</script>
+
+</body>
+</html>
